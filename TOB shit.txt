@@ -1,0 +1,256 @@
+1- Steps of tissue preparation:
+	1- Fixation (Most Common)
+	2- Dehydration
+	3- Sectioning
+	4- Clearing
+	5- Infiltration 
+	6- Trimming
+
+1.5- Examples of artifacts:
+	1- Shrinkage
+	2- Tears
+	3- Knife marks
+
+1.75- Common stains: 
+	1- Hematoxylin (Basophilic) + Eosin (Acidophilic) (H&E)
+	2- Sudan black (Lipid-soluble dye, to staining lipid tissues)
+
+1.87- Define resolving power: Smallest distance between 2 objects, at which they can be seen as 2 separate objects.
+
+1.94- Functions of plasma membrane:
+	1- Endocytosis, Exocytosis
+	2- Transport of molecules across the membrane
+	3- Selective permeable
+	4- Signal transduction
+	5- Compartmentalization
+
+2- Types of epithelium:
+	1- Lining epithelium
+	2- Glandular epithelium
+
+2.5- Epithelium morphological types:
+	1- Simple squamous: blood vessels, heart lining
+	2- Simple cuboidal: ducts exocrine glands
+	3- Simple columnar: GIT, large excretory ducts of glands
+	4- Pseudo-stratified columnar cilliated: upper respiratory tract
+	5- Stratified squamous: Skin, mouth, vagina
+	6- Stratified cuboidal: Sweat, salivary gland
+	7- Stratified columnar: Conjuctiva lining eyelids
+
+3- Layers of mucos membrane:
+	1- Mucosa: Epithelium
+	2- Submucosa: Connective tissue
+	3- Musculosa: Smooth muscle
+	4- Serosa: Connective tissue
+
+4- Exocrine gland types:
+	1- Simple tubular: Intestinal glands
+	2- Simple coiled tubular: Sweat glands
+	3- Simple branched tubular: Gastric glands
+	4- Simple alveolar: Not found in adults
+	5- Simple branched alveolar: Sebaceous glands
+	6- Compound tubular: Cowper glands, testes
+	7- Compound alveolar: Mammary glands
+	8- Compound tubuloalveolar: Salivary glands
+
+5- Mechanisms of exocrine secretion:
+	1- Holocrine
+	2- Apocrine
+	3- Merocrine
+		* Secretes: Serous, Mucous, Seromocus
+
+6- Types of endocytosis and exocytosis:
+	A- Endocytosis:
+		1- phagocytosis
+		2- pinocytosis
+		3- Receptor-mediated endocytosis
+
+	B- Exocytosis:
+		1- Constitutive secretion
+		2- Regulated secretion
+
+7- types of mast cells:
+	1- Heparin: sulfated GAG, acts as coagulant.
+	2- Histamine: Increases vascular permeability, smooth muscle contraction.
+	3- Cytokines: directs activities of leukocytes.
+	4- Serine proteases: activate various types of inflammation mediators.
+	5- Eosinophil and neutrophil chemotactic factors: attracts these leukocytes.
+
+8- Types of WBC:
+	1- Granulocytes: Neutrophils, eosinophils, basophils
+	2- Agranulocytes: Monocytes, lymphocytes(T Cell, B Cell)
+
+9- Functions of skin:
+	1- Protection: Physical barrier againt thermal insults, pathogens, friction, uv radiation.
+	2- Sensation
+	3- Thermoregulator
+	4- Metabolic: Skin cells syntheize vitamin D, excess electrolytes removed via sweat.
+
+10- Layers of epidermis:
+	1- stratum basal
+	2- strarum spinosum
+	3- stratum granulosum
+	4- stratum lucidsum
+	5- stratum cornium
+
+11- Types of fibers:
+	1- Collagen fibers
+	2- Reticular fibers
+	3- Elastic fibers
+
+12- Types of cartilage:
+	1- Hyaline cartilage: collagen type 2
+	2- Elastic cartilage: collagen type 2, elastin
+	3- Fibrocartilage: collagen type 2, type 1
+
+13- Diseases of cartilage:
+	1- Chronic osteoarthritis: Occurs during aging, gradual loss of physical properties of hyaline cartilage.
+	2- Post-traumatic osteoarthritis
+	3- Rheumatoid arthritis: bone erosion, joint deformity.
+
+14: Enumerate bone cells:
+	1- Osteoblast: Sythesis and mineralization of bone during initial bone formation.
+
+	2- Osteoclast: multinucleated cells, matrix reabsorption during growth.
+	3- Osteocytes: Found in lacunae, mechanosensors detect mechanical loads.
+
+15- Difference between osteomalacia, rickets:
+	Ans/ Both calcium deficiency, rickets in children, osteomalacia in adults and Vitamin D deficiency.
+
+16- Risk factors for osteoporosis:
+	1- Female Gender
+	2- Low estrogen
+	3- Malabsorption
+	4- Poor nutrition
+	5- Lack of excercise, Cigarette smoking
+
+17- Functions of blood:
+	1- Transport of oxygen, nutrients, waste
+	2- Detoxification
+	3- Thermoregulator
+	4- Regulator
+	5- Protective
+
+18- Immunity types:
+	1- Innate immunity: Skin, macrophages.
+	2- Passive immunity: Baby got antibody immunity from mother.
+	3- Acquired immunity: Recovering from a contagious disease.
+
+19- Immunity disorders:
+	1- Immunodeficiencies
+	2- Autoimmune diseases
+	3- Hypersensitivity
+
+20- Antibodies are part of large family of chemicals called immunoglobulins, types of it:
+	1- IgA
+	2- IgD
+	3- IgE
+	4- IgM
+	5- IgG
+
+21- Functionaly nervous system consists of:
+	A- Afferent
+		1- Somatic: Sensory input percevied consciously.
+		2- Visceral: Sensory input percevied unconsciously.		
+
+	B- Efferent
+		1- Somatic: Motor output controlled voluntarily
+		2- Autonomic: Motor output controlled involuntarily
+
+21.5- Enumerate parts of nervous system:
+	1- CNS: Brain, Spinal Cord
+	2- PNS: Nerves that branch off from the spinal cord.
+
+22- Types and functions of glial cells:
+	1- Astrocyte:		CNS
+		1- Assists with neuronal development.
+		2- Replicates to occupy places of dead neurons.
+
+	2- Ependymal cell:	CNS
+		1- Assists in production and circulation of cerebrospinal fluid.
+	
+	3- Microglial cell:	CNS
+		1- Phagocytic cells, protects the CNS from harmful substances.
+	
+	4- Oligodendrocyte:	CNS
+		1- Myelinates CNS axons.
+
+	----------------------------------------------
+
+	1- Satellite cell:	PNS
+		1- Insulates PNS cell bodies
+		2- Regulates nutrient and waste exchange in ganglia cell bodies.
+
+	2- Schwann cells:		PNS
+		1- Myelinates PNS large axons.
+
+22.5- What is synapse, what is it consists of:
+	* Synapse is the place where one neuron sends signal to other neuron.
+	1- Synaptic cleft
+	2- Presynaptic axon terminal
+	3- Post-synaptic cell membrane
+
+23- Meningeal layers:
+	1- Dura mater
+	2- Arachnoid mater
+	3- Pia mater
+
+24- How skeletal muscle organized:
+	1- Endomysium: Surrounds muscle fiber.
+	2- Perimysium: Surrounds fascicle. 
+	3- Epimysium: Surrounds the muscle.
+
+25- Skeletal muscle fiber types:
+	1- Slow oxidative: Adapted for slow contractions over long periods of time without fatigue, having many mitochondria.
+	2- Fast glycolytic: Adapted for rapid, short-term contraction, having few mitochondria, depends largely on anaerobic glycolysis.
+	3- Fast oxidative-glycolytic they have physiological and histological intermediate features between the two.
+
+26- Control of contraction of muscles:
+	1- Skeletal muscles:
+		1- Tropomyosin: Blocks the binding site of myosin in actin.
+		2- Troponin: Binds Ca+2 causing tropomyosin to open the myosin binding site of actin.
+
+	2- Cardial muscles: same as skeletal muscles.
+	3- Smooth (Visceral) muscles:
+		1- MLCK (myosin light-chain kinase): binds actin-myosin.
+		2- Calmodulin: Binds Ca+2, activating MLCK.
+
+27- Regeneration of muscles:
+	1- Skeletal muscles: They can't undergo mitosis, but have satellite cells, it helps muscle cell growth and development.
+	2- Cardial muscles: They have very little regenerative properties, doesn't have satellite cells, damaged muscles generally replaced by connective tissues.
+
+	3- Smooth muscles: Capable of muscle generation after damaging, their cells undergo mitosis
+
+28- Layers that form during gastrulation:
+	1- Endoderm
+	2- Mesoderm
+	3- Ectoderm
+
+29- Derivatives of three embryonic germ layers:
+	A- Ectoderm:
+		1- Epidermis, sweat glands, hair follicles
+		2- Epithelial lining of mouth, anus
+		3- Nervous system
+		4- Epithelium of pineal and pituitary gland
+		5- Sensory receptors in epidermis
+		6- Cornea and lens of eye
+		7- Tooth enamel
+		8- Adrenal medulla
+
+	B- Mesoderm:
+		1- Skeletal system
+		2- Muscular system
+		3- Muscular layer of stomach and intenstine
+		4- Reproductive system
+		5- Circulatory and lymphatic system
+		6- Excretory system
+		7- Adrenal cortex
+		8- Dermis
+		9- Lining of body cavity
+
+	C- Endoderm:
+		1- Epithelial lining of digestive tract
+		2- Epithelial lining of respiratory system
+		3- Lining of urethra, bladder, reproductive system
+		4- Pancreas, Liver
+		5- Thymus, thyroid glands, parathyroid glands

@@ -1,0 +1,1087 @@
+ //notes include all those stuff that could be forgotten (pretty much useless shits (mostly))
+
+module Metabolism 
+{
+
+	Session 1 {
+		* 45 essential nutrients
+		* water is an essential nutrient, while carbs are not
+
+		classify nutrients:
+			energy_yielding = [carbs, lipids, proteins]
+			
+			nutrient_commonness:
+				micronutrients = [vitamins, minerals]
+				macronutrients = [water, carbs, lipids, proteins]
+			
+			stucture_type:
+				organic_nutrients = [carbs, lipids, proteins, vitamins]
+				inorganic_nutrients = [water, minerals]
+
+		* 13 Vitamins
+		
+		define BMI:
+			bmi < 18.5 -> underweight
+			18.5 <= bmi < 25 -> normal
+			25 <= bmi < 30 -> overweight
+			30 <= bmi < 35 -> obesity type 1	disease risk high
+			35 <= bmi < 40 -> obesity type 2	very high
+			bmi >= 40 -> obesity type 3		goodbye my friend
+
+		//orlistat decreases lipid absorption by inhibiting lipases.
+		//sibutramine surpresses appetite.
+
+		when hungry:
+			stomach(ghrelin)
+			ghrelin -> hypothalamus("yo feed me plz")
+
+		when !hungry:
+			intestine([cck, pyy])
+			pancreas(insulin)
+			adipose_tissues(leptin)
+			all -> hypothalamus("stop eating wtf")
+
+		//shivering is orchestrated by posterior hypothalamus
+		//response to heat is orchestrated by anterior hypothalamus
+
+		//There are four primary mechanisms by which heat is transferred to the environment: 1. Radiation 2. conduction 3. convection, 4. evaporation
+	}
+
+	Session 2:
+		FateOfPyruvate:
+			1- Acetyl-CoA, enzyme: Pyruvate Dehydrogenase, cofactors, coenzymes: {NADH, FADH2, Thiamine Pyrophospate, CoA, Lipoic Acid}	   Irreversible
+			2- Oxaloacetate, enzyme: Pyruvate Carboxylase, cofactors: Biotin                                                                 Irreversible
+			3- Lactic Acid, enzyme: Lactate Dehydrogenase														   Reversible
+			4- Alanine, enzyme: Alanine Aminotransferase, cofactors: pyridoxal phosphate									   Reversible
+
+	Session 3:
+
+		FunctionsOfGlutathionine:
+			a. Steroid synthesis in gonads, adrenal glands
+			b. Fatty acid synthesis in adipose tissue and mammary gland
+			c. Fatty acid, cholesterol, and bile acid synthesis in liver
+			f. Detoxification of drugs: liver microsomal P450 enzymes detoxify most of
+			the drugs and other foreign substances with the help of NADPH
+			g. Prevention of Met-Hemoglobinemia
+
+		Favism (broad beans) contains:
+			1- Purine glycoside
+			2- Isovarmine
+			3- Vicine
+
+	Session 4:
+		Beta-oxidation rounds = Acetyl-CoA - 1
+		Acetyl-CoA = Carbons / 2
+
+		Total number of ATP (Old Calculation) = Acetyl-CoA * 12 + Beta-Oxidation rounds * 5
+		Total number of ATP (New Calculation) = Acetyl-CoA * 10 + Beta-Oxidation rounds * 4
+
+		Energy yield (Old Calc) = Total number of ATP (Old Calc) - 1
+		Energy yield (New Calc) = Total number of ATP (New Calc) - 2 
+
+		Ex: 16 Carbon fatty acid:
+			Acetyl-CoA = 8
+			Beta-Oxidation rounds = 7
+
+			Total ATP = 8 * 12 + 7 * 5 = 131
+			Energy yield = 131 - 1 = 130
+	
+	Session 5:
+		Ketone Bodies:
+			Examples/ Acetoacetate, B-Hydroxybutyrate, Acetone
+			
+			Synthesis Occurs in mitochondrial matrix during fasting state
+			Synthesizes when excessive B-oxidation of fatty acids result in excessive acetyl-coa
+			liver is primary site for ketone body synthesis
+			HMG CoA Synthase is the rate limiting enzyme
+
+		HMG CoA Reductase is inhibited by cholesterol, it controls cholesterol biosynthesis.
+		LCAT, ACAT make cholestrol esters.
+
+		Types of Dyslipidemia:
+			2a- Hypercholestrolemia, LDL receptor deficiency, Elevated LDL only.
+			2b- Hyperlipoprotienemia, Decreased LDL receptors and increased APO B// LDL, VLDL, Triglycerides are high.
+
+		Phenotypic dyslipidemia:
+			1- Hypercholestroloemia
+			2- Hypertriglyceridemia
+			3- Mixed dyslipidemia
+
+		Amino Acid catabolism: Starts by removing the Amino group of the amino acid by:
+			1- Transamination: Transfers amino group of an amino acid to a keto acid, to form a new amino acid, keto acid.  (ALT, AST)
+			2- Deamination:
+				1- Oxidative: (Oxidase, Dehydrogenase)
+				2- Non-Oxidative: (Serine, Cysteine, Histidine) -> (Dehydratase, DeSulfhydrase, Histidase)
+
+	Session 6:
+		types of Conjugation reactions:
+			1- Glucuronidation
+			2- Sulfation
+			3- Amination
+	
+	Session Semi-Final:
+		Adrenal Oversecretions:
+			Male_Androgens: Virilization
+			Catecholamines (Epinephrine and norepinephrine): Pheochromocytoma
+			Glucocorticoids: Cushing Syndrome
+			Aldosterone: Obvious asf Bruh
+}
+
+module HDP
+{
+
+	Session 1:
+		3 Parts Of Epidemiology:
+			1- Investigating causes of diseases, and evaluating interventions.
+			2- Effects of clinical decisions on other patients.
+			3- Defining the extent of medical problems.
+
+		Why do we need epidemiology:
+			1- We can't figure out the cause of a disease without considering a large group of people with the same disease.
+			2- Its impossible to treat a patient without having indirect effect on other patients.  (So we need a population perspective of treating)
+			3- We can't plan a treatment service without knowing the extent of the disease.
+
+		5 Objectives of epidemiology:
+			1- To find the cause and risk factors of a disease.
+			2- To find the extent of the disease.			 (How much it burdens the patients)
+			3- To get the history of the disease, and the prognosis of the disease.
+			4- To evaluate new preventive and therapeutic messures, and new modes of healthcare delivery.
+			5- To provide a foundation for developing a public policy, and regulatory decisions for enviromental problems.
+	
+	Session 2:
+		Uses Of census data:
+			1- Predicting population size and projection of future population size assuming birth, death, migration rates.
+			2- Info about population age, sex, residence place.
+			3- Trends in population characteristics.
+			4- Highlights regional differences.
+		
+		Messurement of morbidity in 3 units:
+			1- People who were ill.
+			2- People who experienced illnesses.
+			3- The duration of the illness.
+		
+		Morbidity Data Include:
+			1- Cancer Registers
+			2- Communicable Diseases.
+			3- Immunization and vaccination
+			4- Congenital Malformations
+			5- Abortions
+	
+	Session 5:
+		Cohort Study:
+			Advantages:
+				1- Directly messures incidence rates and risks of a certain disease over time.
+				2- Multiple outcomes.
+				3- Efficent way of studying rare exposures.
+				4- No recall bias.
+				5- Can establish a temporal relationship between exposure and disease.
+			
+			Disadvantages:
+				1- Time consuming and expensive.
+				2- Large sample data.
+				3- Not good for rare diseases.
+				4- Cohort groups must follow up the cohort study until the end overwise bias will be inevitable.
+				5- Not good for diseases that take a long time from exposure to onset. (as it will be more expensive and people might leave the cohort as time passes)
+
+	
+	Session 6:
+	
+		Case-Control Study:
+			Odds = p/(1-p)		p: Prevalence
+			Odds Ratio = (e-case / une-case) / (e-control / une-control)
+
+			Advantages:
+				1- relatively quick and cheap.
+				2- quicker than cohort study, to study diseases that take a long time from exposure to onset.
+				3- efficent way of studying rare diseases.
+				4- Can look at several different risk factors.   (Multiple Exposures)
+
+			Disadvantages:
+				1- Can't messure incidence (risk) only odds.
+				2- Susceptible to recall and selection bias if not well designed.
+				3- Not good for rare exposures.
+				4- Difficult to be sure about the temporal relationship between exposure and the disease.
+
+	Session 7:
+
+		Clinical Trial Features:
+			1-Prospective, follow up of the trials.
+			2- A control group which has a standard treatment or placebo.
+			3- Participants are randomized into intervention group and control group.
+			4- Double blinded, meaning that participants nor investigators know which participant belong to which group.
+
+		Clinical trial types:
+			1- Parallel trial:    multiple intervention groups and a control group.
+			2- Crossover trial:   groups are both intervention and control groups, meaning they test both treatments but there is a washout period between.
+			3- Cluster trial:	    Groups of patients or clinics or an entire population.
+	
+	Session 8:
+
+		Bradford Hill Criteria of Causation:
+			1- Strength of Association.
+			2- Consistency of association.
+			3- Specificity of association.
+			4- Temporal sequence of association.
+			5- Coherence of association.
+
+	Session 9:
+
+		Surveys and Cross-Sectional Studies:
+			Advantages:
+				1- Relatively quick and easy to conduct.
+				2- Relatively cheap.
+				3- Provide info on wide range of exposures and outcomes at the same time.
+			
+			Disadvantages:
+				1- Bias gets made with the inclusion of chronic illness people.
+				2- Its difficult to make temporal relationship between outcome and exposure.
+
+		Ecological Studies:
+			Advantages:
+				1- Can look for associations in large populations.
+				2- Uses existing data, therefore maybe efficent and quick.
+
+			Disadvantages:
+				1- Can't confirm association at Individual level.
+				2- Can be difficult to conduct when exposure data is not readily available.
+				3- Ecological Fallacy.		(Mistaken belief)
+
+	Session Semi-final:
+		
+		Types of Observational Studies:
+			Cohort, Case-control, survey, cross-sectional, ecological
+		
+		Types of Experimental Studies:
+			Randomized Controlled Trials, Parallel Trial, Crossover trial, cluster trial, Factorial trial
+
+		Hierarchy of evidence (Lowest to Highest):
+			1-Expert opinions.
+			2-Case reports, case series.			(1~3 participants)
+			3-Cross-sectional study.
+			4-Ecological study.
+			5-Case-control Study.
+			6-Cohort Study.
+			7-Randomized Controlled Trials.
+			8-Systematic reviews and meta-analysis of trials.
+
+	Session Final:
+
+		Clinical Audit and clinical research are both fundamental to improving healthcare services, they involve the following key steps:
+			1- Identifying important(relevant) question.
+			2- Collecting information about the question.
+			3- Analysing the info.
+			4- Interpreting the results.
+			5- Sharing the findings to promote changes.
+
+		Purpose of audit:
+			1- To compare the care we provide to the care we AIM to provide.
+			2- To allow clincal teams, identify deficiencies, and implement change.
+
+		Key Steps of clinical audit:
+
+			1- Planning.
+			2- Identify a suitable topic to audit.
+			3- Choosing the standards.
+			4- Writing protocols.
+			5- Collecting data.
+			6- Analyzing the data.
+			7- Interpreting the results.
+			8- Sharing findings, and changing practice
+
+		Audits can be used to look at any part of clinical care:
+			1- Treatment
+			2- Structure, e.g. number and mix of staff, number of beds in wards.
+			3- Process, e.g. Waiting times, appointment booking, consultation.
+			4- Outcome, e.g. length of hospital stay, survival, patient experience, quality of life.
+		
+}
+
+module CPS
+{
+	Cystic Fibrosis:
+		Symptoms:
+			Infants:
+				1- Obstructive Jaundice
+				2- Meconium Ileus
+				3- Failed to thrive (Decelerated Physical growth)
+
+			Childhood:
+				1- Pulmonary Infection
+				2- Atypical Asthma
+				3- Steatorrhea and malnutrition. 
+				4- Esophageal Varices
+				5- Nasal Polyps
+				6- Hypersplenism
+
+			Adulthood:
+				1- Chronic Bronchitis
+				2- Hemoptysis
+				3- Chronic Abdominal pain
+				4- Delayed sexual development
+
+		Diagnosis:
+			1- Sweat electrolyte testing.
+			2- Neonatal screening using immunoreactive trypsin.
+
+		Treatment:
+			1- Reducing risk of pulmonary infection.
+			2- Managing the adverse effect of the condition on organs. (Pancreas, Intestine, Reproductive)
+			3- Antimicrobial therapy and physiotherapy.
+
+		Other Pulmonary treatments:
+			1- Hypertonic saline
+			2- Dornase Alpha
+			3- Azithromycin
+			4- Tobramycin
+
+		Gastrointestinal treatments:
+			1- Fat-soluable vitamins.
+			2- Pancreatic enzymes.
+
+	Tuberculosis:
+		Risk Factors:
+			Patient Related:
+				1- Age, Elders and children are most susceptible.
+				2- First-generation immigrants from high prevalance countries.
+				3- Close contacts of infected.
+				4- Overcrowding
+				5- Smoking
+		
+			Associated Diseases:
+				1- Immunosuppression diseases. (HIV)
+				2- Diabetes melitus.
+				3- Chronic Kidney Disease.
+				4- Measles in Children
+				5- Malignancy
+				6- Deficiency of vitamin D, A
+				7- Silicosis
+		
+		Clinical Presentations of TB:
+			1- Chronic Coughing, often with hemoptysis
+			2- Pyrexia with unknown reasons.
+			3- Excess pleural effusion
+			4- Night sweat
+			5- Weight loss, weakness
+
+		Chronic Complications of TB:
+			Pulmonary:
+				1- Massive Hemoptysis
+				2- Cor pulmonate		 (enlargement of right side of heart due to high blood pressure)
+				3- Fibrosis/Emphysema
+				4- Bronchiectasis
+				5- Atypical Mycobaterium Infection
+			
+			Non-Pulmonary:
+				1- Laryngitis
+				2- Enteritis
+				3- Polyarthritis
+				4- Amyloidosis
+		
+		Diagnosis of tb:
+			Pulmonary:
+				1- Sputum Culturing
+				2- Bronchoscopy
+				3- Gastric Washing
+
+			Extrapulmonary:
+				1- Fluid Examination
+				2- Tissue Biopsy
+
+			*Tuberculin skin test
+			Blood tests of: FBC (Full blood count), CRP (C-Reactive Protein), ESR (Erythrocyte Sedimination Rate (Higher means higher levels of general inflammation)
+
+		Treatment of new TB patients:		H: Isoniazid, R: rifampicin, Z: Pyrazinamide, E: Ethambutol
+			Intensive Phase: 2 Months of HRZE
+			Continuation Phase:
+				1- 4 Months of HR
+				2- 4 Months of HRE
+
+		Major Adverse reactions of HRZE:
+			Isoniazid:
+				1- Peripheral neuropathy
+				2- hepatitis
+				3- Rash
+			
+			Rifampicin:
+				1- Hepatitis
+				2- Rash
+				3- Fever
+				4- Gastrointestinal Disturbances
+
+			Pyranziamide:
+				1- Hepatitis
+				2- Gastrointestinal Disturbances
+				3- Hyperuricemia
+
+			Ethambutol:
+				1- Retrobulbar neuritis
+				2- Arthalgia
+
+	Iron Deficiency:
+		we ingest 10-20 mg of iron/day.
+		1/10 of ingested iron is absorbed.
+		Gastric acid releases iron from food.
+		
+		iron is absorbed in reduced form.
+		Ascorbate (Vitamin C) Increases iron absorption by reducing.
+		Phytates, tannates, antacids decrease iron absorption by making complex with iron.
+
+		Disorders of iron metabolism:
+			1- Hemochromatosis: Increased absorption of iron.
+			2- Iron Deficiency anemia: Decreased amount of iron.
+			3- Anemia of chronic disease: Inflammation-induced change of iron distribution.
+		
+		Lab Features of iron deficiency anemia:
+			Hypochromic microcytic erythocytes
+			
+			Low:
+				HB, RBC, Serum Iron, Serum Ferritin, Transferrin saturation
+			Low, Normal:
+				WBC, Retics
+			Low, Normal, High:
+				Platelets
+			High:
+				RDW, TIBC (Total iron binding capacity), Serum Transferrin Receptor, FEP
+
+		Causes of iron deficiency:
+			1- Chronic blood loss
+			2- Hemolysis and hemoglubinuria
+			3- Increased demand of iron
+			4- Malabsorption of iron
+			5- Inadequate iron intake
+
+		Symptoms of iron deficiency anemia:
+			1- Tiredness, breathlessness
+			2- Pallor
+			3- Tachypnea, Tachycardia
+			4- Postural Hypotension
+			5- Ankle Edema
+
+		Treatment:
+			Ferrous Sulphate 200 mg 3 times a day, for 3-6 months.
+
+	Syncope:
+		Types of syncope:
+			1- Cardiac Syncope: Due to mechanical dysfunction of heart or arrhythmia.
+			2- Neurocardiogenic syncope (Reflex Syncope): abnormal autonomic reflex causes bradycardia and/or hypotension.
+			3- Postual Hypotension: a specific standing causes hypotension.	(Typically because of dehydration) 
+
+		Features of Cardiac Syncope:
+			Premonitory Symptoms:
+				1- Often None
+				2- Lightheadedness
+				3- Palpitation
+				4- Chest pain, Breathlessness
+			
+			Unconscious Period:
+				1- Extreme pallor
+			Recovery:
+				1- Rapid Flushing
+
+		Features of Neurocardiogenic Syncope:
+			Premonitory Symptoms:
+				1- Nausea
+				2- Lightheadedness
+				3- Sweating
+
+			Unconscious Period:
+				1- Pallor
+			
+			Recovery:
+				1- Slow Nausea
+				2- Lightheadedness
+
+		Features of Seizure:
+			Premonitory Symptoms:
+				1- Hyperexcitability
+				2- Delirium
+				3- Aura
+				4- Olfactory Hallucinations
+
+			Unconscious Period:
+				1- Prolonged Unconsciousness
+				2- Motor Seizure activity
+				3- Tongue biting
+				4- Urinary Incontinence
+
+			Recovery:
+				1- Prolonged Delirium
+				2- Headache
+				3- Focal neurological signs
+	
+		Difference between Syncope and seizure: (Seizure Syncope)
+			1- Aura + -
+			2- Cyanosis + -
+			3- Post-ictal delirium + -
+			4- Post-ictal amnesia + -
+			5- Post-ictal headache + -
+			6- Rapid Recovery - +
+	
+	Sickle Cell:
+		Treatment of sickle cell disease:
+			1- Blood Transfusion
+			2- Oxygen therapy (used to treat acute chest syndrome)
+			3- Bone-marrow transplantation
+			4- Antibiotics (to treat infections)
+
+		Other treatments for sickle cell:
+			1- Hydroxyurea (Increase HbF)
+			2- Hematopoietic stem cell transplantation
+			3- Iron Overload
+
+		Clinical Manifestation:
+			1- Anemia with jaundice due to chronic hemolysis.
+			2- Acute Anemia, sudden drop in hemoglobin.
+			3- Increased risk of infection due to damaged spleen
+			4- Painful crises, vaso-occlusive crises affects many organs of the body.
+			5- Priapism
+			6- Splenomegaly
+			7- Long-term problems:
+				1- Short stature
+				2- Delayed Puberty, Cognitive Disabilites
+				3- Adenotonsillar Hypertrophy
+				4- Cardiac enlargement
+				5- Heart failure
+
+		Treatment of acute crises (Vaso-occlusive crisis, Acute chest crisis, infection crisis):
+			1- Painful crises treated with oral or intravenous analgesia use opiates if needed, good hydration (oral or intravenous).
+			2- Infectious crises treated with antibiotics.
+			3- Oxygen desaturation treated with oxygen.
+
+			*in case of Acute chest syndrome, priapism, stroke exchange transfusion maybe required.
+		
+		To investigate a acute chest syndrome, we gather:
+			1- Hemoglobin
+			2- WBC
+			3- Platelets
+			4- Oxygen saturation
+			5- Chest X Ray
+
+		Treatment of acute chest syndrome:
+			1-Exchange transfusion
+			2-Giving oxygen by Continous positive airway pressure (cpap).
+			3-Give Antibiotics.
+
+		Prognosis of sickle cell disease:
+			1- Around %50 of severe cases die before age 40.
+			2- Mortality rate during childhood is %3, death is usually from infection.
+
+	Falls:
+		Falls is an acute illness.
+		Falls in the young is dangerous (the cause of the fall is dangerous, not the fall itself).
+
+		Risk Factors:
+			1-Muscle Weakness
+			2-Arthritis
+			3-Depression
+			4-Visual Impairment
+			5-History of falls
+			6-Age over 80 years
+
+		Screening Investigation for acute illnesses:
+			1- Full Blood count
+			2- Urea and electrolytes
+			3- Chest Xray
+			4- ECG
+			5- C-reactive protein
+			6- Blood cultures (if pyrexial)
+
+		Abnormal Gaits and probable causes:
+			1- Antalgic			Arthropathy
+			2- Waddling Proximal	Myopathy
+			3- Stamping			Sensory neuropathy
+			4- Foot drop		Peripheral neuropathy or Radiculopathy
+			5- Ataxic			Sensory Neuropathy or Cerebellar disease
+			6- Apraxic			Bilateral hemisphere lesions
+			7- Hemiplegic		Cerebral hemisphere lesion
+			8- Marche a petits	Small-vessel cerebrovascular disease
+
+		Evidence-based intervention to prevent falls in old people:
+			1- Balance Training
+			2- Less chaotic enviroment.
+			3- Correction of visual impairment
+			4- Rationalization of medication. 
+			5- Calcium and vitamin D supplement.
+
+	Fatigue (Tiredness):
+		Causes:
+			1- Psychiatric Disease: Depression and anxiety and somatoform disorders.
+			2- Neurologic Disease: muscles during examination are not weak.
+			3- Sleep disorders: Obstructive sleep apnea.
+			4- Endocrine disease: hypothyroidism
+			5- Liver and kidney disease
+			6- Obesity
+			7- Physical Inactivity
+			8- Malnutrition
+			9- Infection: Chronic infection or acute infection
+			10- Drugs:	Drug withdrawal, alcholism, medications such as (Anti-depressants, Anti-psychotics, Anxiolytics, opiates,
+						anti-seizure agents, beta blockers).
+			11- Cardiovascular and pulmonary disorders
+			12- Malignancy
+			13- Hematologic diseases
+			14- Systematic inflammatory/ Rheumatological diseases
+			15- Pregnancy
+			16- Disorders of unclear cause
+
+}
+
+module MGD
+{
+
+	Session 1:
+		Classification of amino acids according to their side chains:
+			1- Aliphatic R groups: 		(Glycine, Alanine, Proline, Valine, Leucine, Isoleucine, Methionine)
+			2- Aromatic R groups: 		(Phenylalanine, Tyrosine, Tryptophan)
+			3- Polar Uncharged R Groups: 	(Cysteine, Serine, Threonine, Glutamine, Asparagine)
+			4- Polar Negative charged R groups: (Aspartate (Aspartic Acid), Glutamate (Glutamic Acid))
+			5- Polar Positive charged R groups:	(Histidine, Lysine, Arginine)
+
+		To calculate isoelectric point of aminoacids:
+			1- Neutral Side Chain:
+				IP = (pKa1 + pKa2) / 2
+
+			2- Positively charged side chain:			*No fucking idea whats this about just memorize duh
+				IP = (pKa1 + pKa3) / 2
+
+			3- Negatively charged side chain:
+				IP = (pKa2 + pKa3) / 2
+
+	Session 2:
+		Alpha helix:
+			*3.6 amino acids per turn
+			* 0.54 nm pitch
+		Beta pleated sheet:
+			*Parallel and anti-parallel conformation
+			*0.7nm per turn
+
+		Chaperonins:
+			Act as templates for proteins, to overcome kinetic and thermodynamic barrier in reaching a stable conformation.
+
+	Session 3:
+		Enzymes classed to 6 groups:
+			1- Oxireductases
+			2- Transferases
+			3- Hydrolases
+			4- Lysases:	Addition or removal of groups to form double bonds.
+			5- Isomerases
+			6- Ligases:	Formation of bonds at the expense of atp.
+
+		Types of inhibitors:
+			1-Irrversible Inhibitor: Covalently links with enzyme, destorys its function.
+			2-Reversible Inhibitor:
+				1- Competitive Inhibitor:
+					1- Binds at active site
+					2- Can be overcome by increasing [S].
+					3- Affects km not Vmax
+
+				2- Non-competitive Inhibitor:
+					1- Bind at different site
+					2- cannot be overcome by increasing [S]
+					3- Affects vmax not km
+
+		Regulatory mechanisms that affect enzyme activity:
+			1- Regulation by changing [Substrate], [Product]
+			2- Regulation by changing [Enzyme]:
+				1- Regulation of enzyme synthesis. (rate of enzyme synthesis usually depends on the rate of transcription of mRNA)
+				2- Regulated enzyme degradation. (by adding ubiquitin to it, to mark it for destruction)
+			3- Regulation through conformational changes:
+				1- Allosteric Regulation
+				2- Regulation by covalent modifications. (Some enzymes activated by adding a phosphate group to it)
+
+		Main mechanism which regulate blood clotting cascade:
+			1- Inactive zymogens present at low concentration.
+			2- Amplification at initial signal.
+			3- Feedback activation by thrombin
+			4- Termination of clotting.
+				Fibrinolysis: Degradation of fibrin in a clot by plasmin.
+
+		Protein C and its cofactor protein S:
+			they serve to surpress coagulation cascade.
+			APC (Activated Protein C) also stimulates the release of plasminogen activator and deactivates inhibitor of plasminogen activator, PAI-1.
+
+	Session 4:
+		Structural forms of dna double helix:
+			A-form:
+				11 base-pair per turn, produced by moderately dehydrating B-form.
+			B-form:
+				10 base-pair per turn, main form, 0.34 nm each turn.
+			Z-form:
+				Zig-zag left handed with 12 base-pair per turn.
+
+		Dna polymerases:
+			DNA Polymerase I: Fills the gaps between okazaki fragments.
+			DNA Polymerase II: Functions in DNA Repair.
+			DNA Polymerase III: Chain elongation at leading and lagging strands.
+
+		Cell Cycle:
+			Interphase:
+				G1:
+					This stage begins immediately after mitosis.
+					RNA, Proteins, Organells are synthesized.
+				S:
+					DNA is replicated, chromosomes form sister chromatids.
+				G2:
+					Precursors of spindle fiber are formed.
+					Mitochondria divdie.
+
+			Mitosis:
+				Prophase:
+					1- Chromosomes Condense.
+					2- Nuclear Envelope disappears.
+					3- Centrioles divide and migrate to opposite poles.
+					4- Spindle fibers form and attach to chromosomes.
+				Metaphase:
+					1- Chromosomes line up on the midline of dividing cell.
+				Anaphase:
+					1- Chromosomes begin to separate.
+				Telophase:
+					1- Chromosomes reach opposite poles
+					2- New nuclear envelopes form.
+					3- Chromosomes decondense.
+
+			Cytokinesis:
+				Cleavage forms.
+				Cytoplasm divides.
+			
+			* G1, S, G2, M take 11h, 8h, 4h, 1h respectively.
+
+	Session 5:
+		The Central Dogma:
+			DNA ----------------> RNA -------------> Protein
+				Transcription	   Translation
+			
+			In some viruses, which their genetic material is RNA:
+				RNA -----------------------> DNA ---------------> RNA -------------> Protein
+				     Reverse Transcription	    Transcription        Translation
+
+		Transcription Steps:
+			1- Initiation:
+				1- Promotors control how a gene is transcribed.
+				2- Transcription factors help the RNA pol bind to the promotor, they bind to areas around the promotor.
+				3- RNA pol bind to promotor to elongate the RNA.
+
+			2- Elongation:
+				As RNA pol moves along the DNA strand, it untwists the helix, 10~20 base pairs at a time.
+				Transcription speed in eukaryotes is 24 nucleotides/s, in prokaryotes its 60 nucleotides/s.				
+
+			3- Termination:
+				In prokaryotes, the transcription stops at termination signal.
+				1- In eukaryotes, The RNA pol adds the polyadenylation sequence, transcription process is stopped after 10~35 nucleotides past the polyadenylation sequence.
+				2- RNA processing occurs.
+
+		Transcription Regulators:
+			1- Promoters
+			2- Enhancers:
+				1- Upstream sequences in eukaryotes that help to control the expression of genes.
+				2- Can be thousands of nucleotides away from protein coding region.
+
+			3- Silencers:
+				* These transcription factors, prevent the DNA sequence from being transcribed.
+
+		RNA Processing:
+			1- 5' End gets a 5' Cap.
+			2- 3' End gets a poly-A tail.
+			3- Exons are spliced out.	(Splice means joining)
+
+			These modifications serve the following purposes:
+				1- Facilitate the export of mRNA.
+				2- Protection from hydrolytic enzymes.
+				3- Helping ribosomes attach to the 5' End.
+		
+		The Gene:
+			Gene: Unit of heredity, a length of dna, that contains the code for a protein, and sequences necessary for its expression, promotors, introns, etc...
+
+			Genes vary in size in humans, some are as long as 100 bases, some are more than 2 milion bases.
+			Humans have 20000 to 25000 genes.
+
+		Translation Components:
+			1- tRNA:
+				* Approximately 50 types.
+				* Carboxyl end of amino acid is linked to 3' End of the tRNA with ester bond, and enzyme aminoacyl-tRNA Synthetase.
+
+			2- rRNA and Ribosomes:
+				Prokaryotes: Ribosome 70s, which is 30s small subunit, 50s large subunit.
+				Eukaryotes: Ribosome 80s, which is 40s small subunit, 60s large subunit.
+
+				Ribosomes has 3 sites for tRNA binding:
+					1- E Site: binds the tRNA that carried the last amino acid.
+					2- P Site: binds the tRNA attached to the growing peptide chain.
+						* Peptidyl Transferase: is a P site enzyme that forms peptide bonds between amino acids.
+
+					3- A Site: binds the tRNA carrying the next amino acid.
+
+			3- mRNA: Carries the genetic code to be translated into protein.
+
+		Translation:
+			1- Initiation:
+				1- A small ribosomal subunit binds to mRNA.
+				2- Initiator tRNA binds to a specific codon on the mRNA.
+				3- The large ribosomal subunit joins the complex, the initiator tRNA binds to P-Site, leaving the A site.
+				4- Another tRNA binds to the A site, forming a peptide bond between the amino acid of the first tRNA and its amino acid.
+
+			2- Elongation:
+				1- As the ribosome moves along the mRNA, the tRNA at p site gets released in e site, and the tRNA in a-site moves to p site.
+				2- New tRNA comes to a-site, elongation continues.
+
+			3- Termination:
+				* Termination codons are: UAA, UAG, UGA, no anti-codons exist for those.	(AUU, AUC, ACU are not correct anti-codons)
+
+				1- As Ribosome reaches the stop codons, the polypeptide chain releases.
+				2- Ribosomal subunits separate.
+				3- The new protein undergoes several modifications.	(Post translational modifications)
+
+		Characteristics of genetic code:
+			1- Triplet code: The code is composed of codons, which specifies a particular amino acids, a reading of 3 bases called reading frame.
+			2- Universality: Almost all organisms share the same genetic code, meaning same codon specifies same amino acid.
+			3- Degeneracy Code: Some amino acids are specified by more than one codon.
+				Wobble hypothesis: The third base of a codon, and the first base of an anti codon, can wobble.	(Not follow watson crick base-pairing rules)
+			4- Non-overlapping and commaless
+			5- Ordered code: Codon is read from 5' to 3'.
+			6- Start and termination codons:
+				1- Start codon: AUG methionine
+					* Methionine might be removed from the protein, with certain proteases, although its the starting amino acid for every proteins.
+				2- Stop codon: UAG, UGA, UAA codes for no amino acids.
+
+	Session 6:
+		Mendelian patterns of inheritance (controlled by single gene) classified into 5 groups:
+			A- Autosomal Inheritance
+				1- Autosomal dominant
+				2- Autosomal recessive
+			B- Sex-Linked inheritance
+				1- X-Linked dominant
+				2- X-Linked recessive
+				3- Y-Linked inheritance (Rare)
+
+	Session 8:
+		Post translational modifications:
+			1- Phosphorylation: causes the protein to activate, deactivate, modifying its function.
+			2- Methylation: Increases hydrophobicity, neutralizes negative charge when attached to carboxyl group.
+			3- Acetylation
+			4- Sulfation: Sulfate group added to tyrosine residue.
+			5- O-Linked Glycosylation: Carbohydrate added via glycosidic link to hyrdoxyl of Serine or Threonine, occurs in Golgi.
+			6- N-Linked Glycosylation: Carbohydrate added via n-glycosyl link to nitrogen of asparagine(asn), occurs in ER.
+			7- Ubiquitination: Ubiquitin attached to -NH2 of lysine, proteosome 26s recognizes the ubiquitin and degrades the protein.
+
+		* Best Studied vesicle, has an outer layer protein called clathrin.
+
+		Types of secretion:
+			1- Constitutive secretion: Proteins packaged into vesicles and released continously.  (Serum albumin, collagen)
+
+			2- Regulated secretion:	Proteins released in response to a signal, they are accumulated near the plasma membrane and wait for extracellular signals to secrete.
+				(Hormones, enzymes, mucous)
+		
+		* Proteins that are destined to be inserted into the plasma membrane, lysosomes, Golgi/ER, are not synthesized on free ribsomomes, instead they synthesize on ribsomes on rough ER.
+		
+		Secreted Proteins have a signal sequence:
+			1- 13~36 amino acid.
+			2- 10~15 hydrophobic residues.
+			3- 1 or more positively charged residues near the amino terminus.
+			4- A few polar amino acids in the C-terminus region.
+
+		Basic mechanisms of antibiotic action against bacterial cells:
+			1- Inhibition of cell wall synthesis.
+			2- Inhibition of protein synthesis.
+			3- Inhibition of nucleic acid synthesis.
+			4- Anti-metabolite activity.
+			5- Alternation of cell membranes.
+		
+		Anti-microbial resistance mechanisms:
+			1- limiting uptake of drug
+			2- modifying drug
+			3- inactivating drug
+
+		Classification of antibiotics:
+			1- Beta-lactum Antibiotics (Pencillin)
+			2- Lincomycins (Lincomycin)
+			3- Polyenes Antibiotics (Antifungal) (Nystatin)
+			4- Polypeptide Antibiotics (Bacitracin)
+			5- Aminoglycoside Antibiotics (Neomycin)
+			6- Macrolide Antibiotic (Erythromycin)
+
+	Session 9:
+		Analysis of DNA:
+			Molecular level: DNA Sequencing with sanger dideoxy chain termination method
+
+			Gene level:
+				1- Restriction analysis/ Gene cloning:
+					Restriction enzymes: are bacterial enzymes that recognize a specific dna sequence and cut the double stranded dna at that specific site.
+					* Restriction sites are short dna length 4~8 nucleotides.
+
+					* The cut gene can be used in gene cloning, with DNA ligase can be recombined with Plasmid.
+					
+				2- Gel electrophoresis: DNA fragments can be separated by size. (Smaller DNA fragments migrate faster to positive electrode)
+
+				3- Southern blotting/ Hybridisation:
+					* A solid membrane is placed on the gel to transfer the DNA onto it, this is called southern blotting.	(northern blotting IF IT WAS RNA)
+					* A probe, which is complementary to the DNA fragment, will be mixed. this helps recognizing the DNA fragment, this is called hybridisation.
+ 
+				4- PCR:
+					A repeated cycle, consists of denaturing, renaturing (to hybridize with primers) and polymerizing.
+					* Main PCR components: DNA Sample, Primers, Nucleotides, Taq Polymerase (Special type of polymerase survives high temps).
+
+					* Used in diagnosing many inherited diseases, and detecting the presence of tumoric cells.
+
+			Chromosome Level:
+				1- Karyotyping: A picture of chromosomes numbers, shapes, sizes in metaphase.
+				2- FISH (Flurescent in situ hybridisation):
+					A probing method, can be complementary to a gene, or multiple genes, can be used on centromeres, telomeres.
+					* Its chromosome level probing.
+
+		Analysis of Protein:
+			Gel electrophoresis techniques:
+				1- Native-PAGE: Migrates proteins based on their charge, weight, shape.
+				2- SDS-PAGE: Migrates proteins based on their weight only.  (SDS denatures protein, one SDS for 2 amino acids, SDS has large negative charge)
+					* After protein gel electrophoresis, Coomasie blue dye can be added, which labels the proteins.
+
+				3- Isoelectric focusing: Protein migrates based on its isoelectic point, moves until it reaches the iP.
+				4- 2D-electrophoresis: Combines SDS-PAGE and Isoelectric focusing (In one dimension, it migrates proteins by their iP, in the other dimension, it migrates proteins by their weight), important for proteomics.
+
+			Immunological techniques:
+				* Antibodies can be generated that are highly specific to a particular protein, this is important because it helps identifying a specific protein.
+					(Protein equavalent of DNA probes)
+
+				1- Western blotting: After SDS-PAGE, a membrane will be placed upon the gel, and antibodies will be added to label the migrated proteins.
+				2- Enzyme-linked immunoabsorbent assays (ELISA): Analyzes the concentration (According to an enzyme activity) of a specific protein in a mixture:
+					1- Antibodies to the protein is first immobilized on a solid surface.
+					2- The protein solution is added onto the antibody coated surface.
+					3- The proteins bind to the antibodies, and other proteins are washed out.
+					4- Another antibody binds to the Antibody-Protein complex.
+					5- Binding of the previous antibody is messured by assaying the enzyme activity linked to it.	
+
+			Enzyme assays:
+				* The messurement of enzyme activiy can be clinically useful, as it shows whether an enzyme is present at normal ranges.
+				*Enzyme assays can be used as a diagnostic tool for metabolic diseases. (G6PD Deficiency)
+
+				Clinically important serum enzymes:
+					Aspartate transaminase(AST)		Markers for liver damage
+					Alanine transaminase(ALT)
+
+					Amylase/ Lipase				Markers for pancreatitis
+				
+					gamma-glutamyl transferase(GGT)	Markers for liver damage, Increased by alcohol
+					
+					Alkaline Phosphatase (ALP)		Markers for bone disorders
+					
+					Acid Phosphatase (ACP)			Markers for prostate cancer
+
+					Plasma cholinesterase			inhibited in organophosphate poisoning, decreased in liver disease
+
+					Creatine kinase (CK)
+					Lactate dehydrogenase (LDH)		Markers for myocardial infarction
+
+	Session 10:
+		Categories of mutations:
+			1- Somatic Mutations
+			2- Germ-line Mutations
+
+		Types of mutations:
+			Point Mutation: A subsitute in a single nucleotide. (Transition: Purine -> Another Purine, Transversion Purine -> Pyrimidine)
+				In a coding region (Exons):
+					1- Missense mutation: Change a codon specifying amino acid, to another codon, which specifies another amino acid. (Sickle cell disease  GAG -> GTG)
+					2- Silent mutation: Change a codon specifying amino acid, to another codon, specifying the same amino acid. (Does not alter protein function)
+					3- Sense mutation: Change a stop codon, to a codon specifying amino acid.	(Produces longer protein than usual)
+					4- Nonsense mutation: Change a codon specifying amino acid to a stop codon.	(Produces truncated proteins)
+				
+				In a non-coding region (Introns):
+					1- Splice mutation: Occurs in splice site of introns. (Phenylketonuria)
+ (
+			Insertion or Deletion:
+				A- Frameshift mutation:
+					1- Frameshift-Insertion: Involves inserting 1, 2, more than 3, nucleotides. (Gaucher Disease)
+					2- Frameshift-Deletion: Involves deleting 1, 2, more than 3 nucleotides.
+
+				B- Triplet insertion: Involves inserting 3 or multiples of 3 nucleotides to coding region, leading to addition of amino acids.
+				C- Triplet deletion: Involves deleting 3 or multiples of 3 nucleotides in coding region, leading to removal of amino acids.  (Duchenne muscular dystrophy)
+				
+				D- Allelic expansion: Increase in trinucleotide repeats.
+					Ex: DMPK (Dystrophia myotonica protein kinase) gene has NORMAL 5~37 CTG repeats.
+						Premutation: Expansion of the gene can occur, but not cause disease, 38~49 CTG repeats.
+						
+						Mutation: Myotonic dystrophy disorder can occur, in 50~thousands CTG repeats.
+		
+		Mutation rate depends on:
+			1- Gene size
+			2- Gene sequence
+			3- Hotspot
+
+		Chemicals causing mutation:
+			1- Base analogs (Chemicals similar to bases) cause base pairing subtitution. (Thymine -> 5-bromouracil)
+			2- Chemical modifications of bases: modifying properties of bases (Treatment of DNA with HNO2, causes cytosine -> uracil, by deamination)
+			3- Alkylating agents (MMS, EMS)	MS: Methano sulfate
+			4- Intercalating agents: Chemicals inserted into dna, distorts helix shape.  (Proflavine, Acridine orange)
+
+		Physical mutagens:
+			1- X-Ray
+			2- Ultraviolet: common effect is dimmer formation between adjacent pyrimidines especially thymine.
+			3- Gamma rays: they are used in killing cancer cells.
+		
+		DNA Repair System:
+			1- Excision repair: Damaged DNA removed by excision of bases, and replacing with DNA polymerase:
+				1- Nucleotide excision repair:
+					* Recognizes helix distorting lesions (Thymine dimer)
+					* Replaces upto 30 nucleotides
+					* Excinuclease primary enzyme
+
+				2- Base excision repair:
+					* Recognizes specific nucleotide damage. (deamination, alkylating damages)
+					* Replaces upto 1~5 nucleotides
+					* Glycosylase primary enzyme
+
+			2- Mismatch repair: Recognizes mismatched base pairs that do not follow watson-crick base pairing rules. (A-T, G-C)
+
+		Failure of DNA System: protein p53 monitors DNA damage, if damage too severe, it will promote apoptosis.
+	
+		DNA Repair system disorders:
+			1- Xeroderma Pigmentosum (XP): An autosomal recessive mutation, causes nucleotide exision repair system not to work, this causes extreme sensitivity to UV, as it can't repair thymine dimers.
+
+			2- Trichothiodystrophy: Individuals have faulty nucleotide excision repair or base excision repair, or both.
+
+
+	Session Final:
+		* Most DNA-based clinical diagnoses rely on PCR Amplification.
+		
+		After PCR Amplification, detect the mutation by obtaining information related to the mutation:
+			1- Info regarding a loss or gain of a restriction site in a PCR product.	(loss in sickle cell)
+			2- Info regarding the size of the PCR product.	(Smaller size in CF)
+			3- Presence or absence of a PCR product.
+			4- DNA Sequence of the PCR product.
+
+		Sickle Cell Anemia:
+			* Caused by point mutation in the coding sequence of beta-globin gene, GAG -> GTG (Point mutation, Transversion), at 7th codon.
+			* HbS is insoluble and sticks with other molecules in low oxygen conditions, causing sickle shaped RBCs.
+
+		Genetic testings to diagnose sickle cell:
+			1- PCR Amplification followed by restriction analysis.
+			2- PCR Amplification followed by DNA sequencing.
+			3- PCR Amplification followed by hybridisation to Allele-Specific oligonucleotides (ASO).	(ASO Probe will be positive, if its complementary to the gene)
+			4- Allele specific PCR, check for presence or absence of product.
+
+		Cystic Fibrosis:
+			* Chromosome 7
+
+			* Severe CF results from deletion of CTT at exon 11, results in loss of phenylalanine residues.
+
+		Genetic testings for CF diagnosis:
+			1- PCR Amplification followed by DNA sequencing.
+			2- PCR Amplification check the size of DNA with gel electrophoresis.
+			3- PCR Amplification followed by hybridisation to an Allele-specific oligonucleotide (ASO).
+
+		Hemophilia A: 
+			* X-Linked Recessive disorder, caused by mutation to coagulation factor F8.
+			* Diagnosed with Southern blotting
+
+		Myotonic Dystrophy Type 1:
+			* Autosomal dominant, caused by expansion of repeated trinucleotide CTG (Allelic expansion), in the Dystrophia myotonica protein kinase (DMPK) gene.
+			* Normal CTG repeats: 5~37
+			* Pre-mutation: 38~49
+			* Diseased: >= 50
+
+			* Diagnosed with Southern Blotting
+
+		Other mutations that diagnosed with Southern Blotting:
+			1- Fragile X syndrome
+			2- Huntington disease
+			3- Spinocerebellar ataxia
+			4- Freidreich ataxia
+			5- MD type 2
+}
