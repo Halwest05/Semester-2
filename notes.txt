@@ -1,4 +1,4 @@
- //notes include all those stuff that could be forgotten (pretty much useless shits (mostly))
+ //notes include all those stuff that could be forgotten
 
 module Metabolism 
 {
