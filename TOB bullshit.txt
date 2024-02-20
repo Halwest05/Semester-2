@@ -1,5 +1,5 @@
 1- Steps of tissue preparation:
-	1- Fixation (Most Common)
+	1- Fixation
 	2- Dehydration
 	3- Sectioning
 	4- Clearing
